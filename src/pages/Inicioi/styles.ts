@@ -20,4 +20,20 @@ export const Container = styled.div`
     font-size: 25px;
     margin-top: 25px;
   }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 25px;
+    height: 100vw;
+
+    h1 {
+      font-size: 35px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
 `

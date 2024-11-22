@@ -20,4 +20,9 @@ export const Container = styled.div`
   grid-template-columns: 250px auto;
   height: calc(100vh - 40px);
   padding: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 `

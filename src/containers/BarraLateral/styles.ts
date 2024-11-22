@@ -33,6 +33,15 @@ export const Li = styled.li`
   &:hover {
     padding: 35px;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 20px;
+
+    &:hover {
+      padding: 25px;
+    }
+  }
 `
 export const Item = styled(NavLink)`
   color: #466067;
@@ -40,4 +49,21 @@ export const Item = styled(NavLink)`
   text-decoration: none;
   font-weight: bold;
   padding: 20px;
+`
+export const Menu = styled.button`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 55px;
+    color: #c4c8c5;
+  }
+`
+export const Open = styled.div`
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
